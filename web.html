@@ -1,0 +1,363 @@
+// =================== Protocoles complets ===================
+const PROTOCOLS = {
+  "PTE": `PROTOCOL DE REEDUCATION - PTE
+
+1. Objectifs :
+- Rétablir la mobilité active et passive de l'épaule.
+- Réduire la douleur et limiter le risque d'ankylose.
+- Améliorer la fonction du membre supérieur dans les activités quotidiennes.
+
+2. Phase initiale (Semaine 1-3) :
+- Immobilisation initiale avec attelle ou écharpe.
+- Exercices de mobilisation passive douce (pendule, mobilisation assistée en flexion/extension limitée).
+- Exercices isométriques du deltoïde et des muscles parasternaux pour prévenir l'atrophie.
+
+3. Phase intermédiaire (Semaine 4-8) :
+- Transition vers des mobilisations actives assistées.
+- Exercices d'amplitude progressive en extension, abduction et rotations interne/externe.
+- Utilisation de bandes élastiques pour renforcer les muscles stabilisateurs.
+- Initiation à des exercices de proprioception (ex : sur ballon d’équilibre).
+
+4. Phase avancée (Semaine 9-12) :
+- Renforcement musculaire ciblé et exercices de coordination.
+- Rééducation fonctionnelle intégrant mouvements quotidiens et activités spécifiques.
+- Travail de l'endurance musculaire et ajustement des amplitudes en fonction de la tolérance.
+
+5. Suivi et évaluation :
+- Évaluation hebdomadaire de l'amplitude articulaire et de la douleur.
+- Adaptation du protocole en fonction de la récupération fonctionnelle et des retours du patient.`,
+  "PTH": `PROTOCOL DE REEDUCATION - PTH
+
+1. Objectifs :
+- Rétablir la mobilité et la stabilité de la hanche.
+- Réduire la douleur et prévenir l'atrophie musculaire.
+- Optimiser la démarche et les transferts fonctionnels.
+
+2. Phase initiale (Semaine 1-2) :
+- Repos relatif et gestion de la douleur par cryothérapie et médication.
+- Mobilisations passives avec un accent sur les basculements du bassin.
+- Exercices de respiration diaphragmatique pour induire la relaxation musculaire.
+
+3. Phase intermédiaire (Semaine 3-6) :
+- Passage aux exercices actifs assistés pour la hanche.
+- Renforcement progressif des abducteurs, adducteurs et quadriceps.
+- Exercices de proprioception et transfert de poids avec assistance.
+
+4. Phase avancée (Semaine 7-12) :
+- Renforcement musculaire intensif et exercices de stabilité dynamique.
+- Entraînement à la marche avec aide progressive (déambulateur puis canne).
+- Intégration d’exercices fonctionnels (montée/descente d’escaliers, transferts).
+
+5. Suivi et évaluation :
+- Contrôle régulier de la douleur et ajustement des exercices.
+- Réévaluations bimensuelles pour adapter l’intensité du protocole.`,
+  "PTG": `PROTOCOL DE REEDUCATION - PTG
+
+1. Objectifs :
+- Récupérer la mobilité et la stabilité du genou en post-opératoire.
+- Renforcer le quadriceps et les muscles ischio-jambiers.
+- Améliorer la proprioception et la capacité de marche.
+
+2. Phase initiale (Jours 1-7) :
+- Gestion de la douleur et réduction de l’œdème (cryothérapie, TENS).
+- Mobilisations passives du genou avec une amplitude progressive.
+- Mise en place d'exercices de drainage lymphatique et étirements légers.
+
+3. Phase intermédiaire (Semaine 2-6) :
+- Introduction des exercices actifs assistés et renforcement léger.
+- Exercices de mobilisation en charge progressive (avec aide).
+- Initiation aux exercices de proprioception sur surfaces stables et instables.
+
+4. Phase avancée (Semaine 7-12) :
+- Exercices de renforcement intensif et de coordination.
+- Entraînement fonctionnel incluant la marche, escaliers et activités quotidiennes.
+- Ajustements personnalisés en fonction des progrès fonctionnels.
+
+5. Suivi et évaluation :
+- Suivi régulier avec réévaluations hebdomadaires.
+- Adaptation progressive des exercices selon l'évolution du patient.`,
+  "CHEVILLE": `PROTOCOL DE REEDUCATION - Prothèse de cheville
+
+1. Objectifs :
+- Restaurer la mobilité de la cheville et améliorer l'équilibre.
+- Réduire la douleur et l'inflammation post-opératoire.
+- Optimiser la marche et les activités quotidiennes.
+
+2. Phase initiale (Semaine 1-3) :
+- Immobilisation partielle et gestion de la douleur (cryothérapie).
+- Exercices de mobilisation passive de la cheville (flexion, extension, inversion/éversion légères).
+- Exercices de drainage pour prévenir l’œdème.
+
+3. Phase intermédiaire (Semaine 4-8) :
+- Transition vers des exercices actifs assistés.
+- Renforcement musculaire des péroniers et triceps sural à l’aide de bandes élastiques.
+- Introduction d’exercices de proprioception sur sol instable (ex : coussin proprioceptif).
+
+4. Phase avancée (Semaine 9-12) :
+- Renforcement global de la cheville et exercices d'équilibre dynamique.
+- Entrainement fonctionnel intégrant la marche et activités sportives adaptées.
+- Suivi rapproché de la douleur et ajustement des charges d'exercices.
+
+5. Suivi et évaluation :
+- Évaluations hebdomadaires et ajustement continu du protocole selon la progression.`,
+  "FRACTURE_HUMERUS": `PROTOCOL DE REEDUCATION - Fractures de l'humérus, du coude et de la main
+
+1. Objectifs :
+- Restaurer la mobilité des articulations de l’UE.
+- Prévenir la raideur et l’atrophie musculaire.
+- Favoriser une récupération fonctionnelle optimisée.
+
+2. Phase initiale (Semaine 1-2) :
+- Immobilisation stricte et gestion de la douleur.
+- Mobilisations passives avec surveillance étroite.
+- Techniques de drainage lymphatique et cryothérapie pour réduire l’œdème.
+
+3. Phase intermédiaire (Semaine 3-6) :
+- Passage aux mobilisations actives graduées.
+- Exercices isométriques ciblant les muscles péri-articulaires.
+- Introduction progressive aux exercices de préhension et de dextérité.
+
+4. Phase avancée (Semaine 7-12) :
+- Renforcement musculaire dynamique et coordination fine.
+- Intégration d’exercices fonctionnels pour les gestes quotidiens.
+- Exercice de proprioception et rééducation sensorielle.
+
+5. Suivi et évaluation :
+- Réévaluations régulières pour adapter l'intensité des exercices.
+- Suivi de la douleur et des amplitudes articulaires.`,
+  "FRACTURE_FEMUR": `PROTOCOL DE REEDUCATION - Fractures du fémur, tibia et pied
+
+1. Objectifs :
+- Restaurer la fonction des membres inférieurs.
+- Renforcer les muscles et améliorer l’équilibre.
+- Prévenir l’atrophie musculaire et encourager la mise en charge progressive.
+
+2. Phase initiale (Semaine 1-3) :
+- Immobilisation initiale et contrôle de la douleur (cryothérapie, électrothérapie).
+- Mobilisations passives et exercices doux pour préserver l’amplitude.
+- Techniques de drainage lymphatique pour gérer l’œdème.
+
+3. Phase intermédiaire (Semaine 4-8) :
+- Exercices actifs assistés et début de la mise en charge progressive.
+- Renforcement progressif des quadriceps, ischio-jambiers et muscles du mollet.
+- Exercices de proprioception sur surface stable et instable.
+
+4. Phase avancée (Semaine 9-12) :
+- Renforcement intensif et exercices fonctionnels (marche, escaliers).
+- Introduction d’exercices d’équilibre dynamique et coordination.
+- Adaptation du programme selon l’évolution fonctionnelle et la douleur.
+
+5. Suivi et évaluation :
+- Réévaluations bihebdomadaires pour monitorer la progression.
+- Ajustement permanent des exercices en fonction de l’état clinique.`,
+  "SDRC": `PROTOCOL DE REEDUCATION - SDRC
+
+1. Objectifs :
+- Réduire l'intensité de la douleur et l'œdème.
+- Améliorer la mobilité et la fonction du membre affecté.
+- Agir sur les mécanismes neurogènes de la douleur.
+
+2. Phase initiale :
+- Traitement de la douleur par médication et thérapies physiques (cryothérapie, TENS).
+- Mobilisations passives et techniques de désensibilisation.
+- Application de massages légers et stimulation sensorielle pour faciliter la circulation.
+
+3. Phase intermédiaire :
+- Introduction d'exercices actifs légers, décomposés et répétitifs.
+- Exercices de rééducation sensorielle et proprioceptive.
+- Utilisation de techniques complémentaires (thérapie miroir, stimulation électrique).
+
+4. Phase avancée :
+- Renforcement musculaire progressif et travail de coordination.
+- Rééducation fonctionnelle intégrant les mouvements du quotidien.
+- Suivi psychologique au besoin pour soutenir la reprise fonctionnelle.
+
+5. Suivi et évaluation :
+- Évaluation régulière de la douleur et révision du protocole.
+- Coordination interdisciplinaire pour une prise en charge globale.`,
+  "SCOLIOSE": `PROTOCOL DE REEDUCATION - Scoliose
+
+1. Objectifs :
+- Améliorer la posture et l’équilibre vertébral.
+- Renforcer les muscles paraspinaux et abdominaux pour stabiliser la colonne.
+- Prévenir la progression de la déformation et soulager les douleurs associées.
+
+2. Phase initiale :
+- Évaluation posturale approfondie et mise en place de programmes d’étirement.
+- Exercices de mobilisation douce ciblant la souplesse musculaire.
+- Techniques de respiration et de relâchement pour diminuer les tensions.
+
+3. Phase intermédiaire :
+- Renforcement musculaire ciblé (muscles paraspinaux, abdominaux, dorsaux).
+- Exercices de gainage et rééquilibrage musculaire.
+- Travail proprioceptif pour améliorer la coordination et l’équilibre.
+
+4. Phase avancée :
+- Intensification des exercices correctifs et de renforcement global.
+- Entraînement fonctionnel incluant mouvements complexes et coordination.
+- Suivi régulier et adaptation en fonction de l’évolution de la courbure.
+
+5. Suivi et évaluation :
+- Consultations régulières pour adapter le protocole.
+- Contrôle radiologique et clinique pour évaluer l’évolution de la déformation.`,
+  "LOMBALGIES": `PROTOCOL DE REEDUCATION - Lombalgies
+
+1. Objectifs :
+- Réduire la douleur lombaire et améliorer la flexibilité.
+- Renforcer les muscles stabilisateurs du tronc et améliorer la posture.
+- Prévenir les récidives et faciliter le retour aux activités quotidiennes.
+
+2. Phase initiale :
+- Gestion de la douleur par cryothérapie, TENS et relâchement musculaire.
+- Exercices de mobilisation douce (rotations, flexion/extension progressives).
+- Correction posturale et éducation ergonomique.
+
+3. Phase intermédiaire :
+- Renforcement ciblé du transverse, multifidus et muscles paraspinaux.
+- Exercices de gainage et de stabilisation dynamique.
+- Introduction aux exercices de proprioception pour renforcer la posture.
+
+4. Phase avancée:
+- Programme de renforcement global et exercices fonctionnels.
+- Entraînement à la marche, montée/descente d'escaliers et activités sportives adaptées.
+- Techniques de gestion du stress et relaxation active.
+
+5. Suivi et évaluation:
+- Suivi hebdomadaire des amplitudes et adaptation progressive des exercices.
+- Surveillance continue de la douleur et ajustements thérapeutiques.`,
+  "AVC": `PROTOCOL DE REEDUCATION - AVC avec hémiparésie / AVC avec paralysie
+
+1. Objectifs:
+- Restaurer la motricité fine et globale du membre affecté.
+- Renforcer la coordination et améliorer l’équilibre.
+- Favoriser l'autonomie dans les gestes quotidiens.
+
+2. Phase initiale:
+- Rééducation passive et assistée pour le membre affecté.
+- Exercices de mobilisation articulaire et stimulation neuromusculaire.
+- Techniques de relaxation et de respiration pour contrôler la spasticité.
+
+3. Phase intermédiaire:
+- Introduction progressive des exercices actifs ciblés.
+- Renforcement musculaire spécifique (postural et marche assistée).
+- Exercices sensoriels et de coordination pour stimuler la plasticité cérébrale.
+
+4. Phase avancée:
+- Exercices complexes de rééducation fonctionnelle et motricité fine.
+- Entraînement à la réintégration des activités de la vie quotidienne.
+- Réadaptation cognitive en association avec les exercices moteurs.
+
+5. Suivi et évaluation:
+- Évaluations régulières par une équipe multidisciplinaire.
+- Adaptation progressive du protocole en fonction des progrès et séquelles.`,
+  "TRAUMATISME": `PROTOCOL DE REEDUCATION - Traumatisme crânien
+
+1. Objectifs:
+- Réhabiliter les fonctions cognitives et motrices.
+- Favoriser la récupération sensorielle et la mémoire fonctionnelle.
+- Optimiser la réadaptation post-traumatique globale.
+
+2. Phase initiale:
+- Rééducation passive et stimulante via des exercices sensoriels.
+- Techniques d’activation cognitive et exercices de mobilisation douce.
+- Suivi rapproché avec adaptation selon l’état neurologique.
+
+3. Phase intermédiaire:
+- Introduction progressive d’exercices actifs et cognitifs.
+- Exercices de coordination, mémoire et langage pour ceux présentant des aphasies.
+- Rééducation des activités de la vie quotidienne (hygiène, alimentation).
+
+4. Phase avancée:
+- Programme intensif de rééducation fonctionnelle et réadaptation à domicile.
+- Exercices combinés de motricité fine et globale.
+- Coordination multidisciplinaire incluant suivi cognitif et psychosocial.
+
+5. Suivi et évaluation:
+- Réévaluations fréquentes des fonctions neurologiques.
+- Ajustements personnalisés du protocole en fonction des progrès.`,
+  "AMPUTES": `PROTOCOL DE REEDUCATION - Amputations de membre supérieur et inférieur
+
+1. Objectifs:
+- Favoriser l’adaptation à la prothèse et la réintégration fonctionnelle.
+- Renforcer les muscles résiduels et optimiser la coordination.
+- Améliorer la proprioception et le contrôle de la prothèse.
+
+2. Phase initiale:
+- Préparation psychologique et éducation relative à l’utilisation de la prothèse.
+- Exercices de mobilisation douce des segments résiduels.
+- Techniques de conditionnement musculaire et étirements adaptés.
+
+3. Phase intermédiaire:
+- Exercices spécifiques de renforcement et équilibre avec appuis progressifs.
+- Entraînement à l'utilisation de la prothèse (contrôle moteur, adaptation fonctionnelle).
+- Mise en place d’exercices fonctionnels intégrant les gestes de la vie quotidienne.
+
+4. Phase avancée:
+- Programme intensif de renforcement musculaire et coordination.
+- Réintégration graduelle aux activités professionnelles et sociales.
+- Ajustement fin de la prothèse par des exercices pratiques ciblés.
+
+5. Suivi et évaluation:
+- Suivi pluridisciplinaire régulier avec évaluations fonctionnelles.
+- Adaptation continue du protocole selon les progrès et besoins spécifiques.`
+};
+
+// ==================== Fonctions UI ==========================
+function populateMenu() {
+  const menuContainer = document.getElementById('menu');
+  if (!menuContainer) return;
+  Object.keys(PROTOCOLS).forEach(code => {
+    const btn = document.createElement('button');
+    btn.className = 'menu-button';
+    btn.textContent = code;
+    btn.addEventListener('click', () => showProtocol(code));
+    menuContainer.appendChild(btn);
+  });
+}
+
+function showProtocol(code) {
+  const display = document.getElementById('protocol-display');
+  const protocol = PROTOCOLS[code];
+  if (!display) return;
+  if (!protocol) {
+    display.innerHTML = `<p class="error">Aucun protocole trouvé pour le code « <strong>${code}</strong> ».</p>`;
+    return;
+  }
+  display.innerHTML = `
+    <div class="protocol" id="protocol-${code}">
+      <h2>Protocole : ${code}</h2>
+      <button class="copy-btn" onclick="copyProtocol('${code}')">Copier le protocole</button>
+      <button class="print-btn" onclick="printProtocol('${code}')">Imprimer</button>
+      <pre id="protocolText-${code}">${protocol}</pre>
+    </div>`;
+}
+
+function copyProtocol(code) {
+  const el = document.getElementById(`protocolText-${code}`);
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent)
+    .then(() => alert('Protocole copié dans le presse‑papiers !'))
+    .catch(err => alert('Erreur : ' + err));
+}
+
+function printProtocol(code) {
+  const el = document.getElementById(`protocolText-${code}`);
+  if (!el) return;
+  const w = window.open('', '', 'width=800,height=600');
+  w.document.write('<html><head><title>Impression</title></head><body><pre>' + el.textContent + '</pre></body></html>');
+  w.document.close();
+  w.print();
+}
+
+function filterProtocols() {
+  const input = document.getElementById('search');
+  if (!input) return;
+  const query = input.value.trim().toUpperCase();
+  const buttons = document.querySelectorAll('.menu-button');
+  buttons.forEach(btn => {
+    const match = btn.textContent.toUpperCase().includes(query);
+    btn.style.display = match ? 'inline-flex' : 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', populateMenu);
